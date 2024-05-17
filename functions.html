@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Functions</title>
+</head>
+<body>
+	<h1>Js Functions</h1>
+	<button onclick="greeting()">Click me</button>
+<script type="text/javascript">
+	function greeting() {
+	alert("good morning stanley")
+	}
+	//function to addnumbers using parameters(arguments)
+	function addnumbers(num1,num2){
+		let sum=num1+num2;
+		console.log(sum)
+	}
+	addnumbers(5,6);
+	addnumbers(2,4);
+	addnumbers(9,19)
+	//function to subtractnumbers using parameters(arguments)
+	function subtractnumbers(num1,num2){
+		let subtract=num1-num2;
+		console.log(subtract)
+	}
+	subtractnumbers(56,24)
+	subtractnumbers(98,46)
+	subtractnumbers(76,14)
+	//a funcyion with a return value
+	function product(a,b){
+		return a*b
+	}
+	let result= product(10,24)
+	console.log(result)
+	//anonymous function assigned to a variable
+	let ans=function(a,b){
+		return a*b;
+	}
+	console.log(ans(10,2))
+</script>
+</body>
+</html>
