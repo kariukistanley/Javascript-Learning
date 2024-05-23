@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p id="demo1"><p>
+	<p id="demo2"><p>
+
+<script >
+const dog={
+	breed:"chihuahua",
+	age:3,
+	gender:"male",
+	sound:function(){
+		console.log("woof woof")
+	}
+
+}	
+dog.sound()
+document.getElementById("demo1").innerHTML=dog.breed;
+function car(make,model,year){
+	this.model=model
+	this.make=make
+	this.year=year
+}
+let myCar=new car('Honda','Accord','2010')
+document.getElementById("demo2").innerHTML=myCar.make+" "+myCar.model+" "+myCar.year
+console.log(Object.keys(myCar))
+console.log(Object.values(myCar))
+console.log(Object.entries(myCar))
+</script>	
+
+</body>
+</html>
